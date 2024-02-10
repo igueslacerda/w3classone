@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Card from './components/card';
 
-const content = (<>
+const content = Card(<>
 <h1>Rélou Uordi<span style={{color: 'red'}}>!</span></h1>
 <table>
     <tr><th>id</th><th>Nome</th><th>Letra</th></tr>

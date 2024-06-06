@@ -8,6 +8,7 @@ const tableItems = [
   { id: 1, nome: "Igues", letra: "A" },
   { id: 2, nome: "Vanessa", letra: "H" },
   { id: 3, nome: "Tiago", letra: "L" },
+  { id: 4, nome: "Libian", letra: "V" },
 ];
 const card1 = (
   <Card>

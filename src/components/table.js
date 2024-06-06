@@ -1,4 +1,4 @@
-const Table = (props) => {
+export default function Table(props) {
   return (
     <table>
       <tr>
@@ -15,6 +15,4 @@ const Table = (props) => {
       ))}
     </table>
   );
-};
-
-export default Table;
+}

@@ -2,15 +2,16 @@ export default function Table(props) {
   return (
     <table>
       <tr>
-        <th>id</th>
-        <th>Nome</th>
-        <th>Letra</th>
+        {props.colunas.lenght !== 0 &&
+          props.colunas.map((col) => <th>{col.titulo}</th>)}
       </tr>
       {props.items?.map((item, i) => (
         <tr>
-          <td>{item.id}</td>
-          <td>{item.nome}</td>
-          <td>{item.letra}</td>
+          {props.colunas.lenght === 0 ? (
+            <td></td>
+          ) : (
+            props.colunas.map((col) => <td>{item[col.propriedade]}</td>)
+          )}
         </tr>
       ))}
     </table>

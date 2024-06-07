@@ -15,7 +15,14 @@ const card1 = (
     <h1>
       Rélou Uordi<span style={{ color: "red" }}>!</span>
     </h1>
-    <Table items={tableItems} />
+    <Table
+      colunas={[
+        { titulo: "id", propriedade: "id" },
+        { titulo: "Nome", propriedade: "nome" },
+        { titulo: "Letra", propriedade: "letra" },
+      ]}
+      items={tableItems}
+    />
   </Card>
 );
 
